@@ -135,9 +135,10 @@ def get_tags(tok_text):
         '''
         sent_words += sen_words
         sent_tags += sen_tag
-        
+    '''    
     print('***********sent_words**********:\n',len(sent_words),sent_words)
     print('***********sent_tags**********:\n',len(sent_tags),sent_tags) 
+    '''
     return sent_words, sent_tags
 
 def convert_examples_to_features(examples, label_list, max_seq_length,tokenizer,tag_tokenizer, is_multi_choice=True):
